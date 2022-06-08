@@ -16,12 +16,16 @@ const connect = function() {
   });
 
   conn.on("connect", () => {
+
     conn.write("Name: AKY");
+
   });
+
 
   conn.on("data", (data) => {
     console.log(data);
   });
+
 
   return conn;
 };
